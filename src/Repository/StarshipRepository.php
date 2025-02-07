@@ -7,9 +7,10 @@ use Psr\Log\LoggerInterface;
 
 class StarshipRepository
 {
+
     public function findAll(): array
     {
-        return [
+               return [
             new Starship(
                 1,
                 'USS LeafyCruiser (NCC-0001)',
