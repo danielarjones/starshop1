@@ -19,8 +19,8 @@ class StarshipApiController extends AbstractController
 
         return $this->json($starships);
     }
-    #[Route('/{id<\d+>}', methods:['GET'])]
-    public function get(int $id,StarshipRepository $repository)
+    #[Route('/{id<\d+>}', methods: ['GET'])]
+    public function get(int $id, StarshipRepository $repository)
     {
         $starship = $repository->find(id: $id);
         if (!$starship) {
